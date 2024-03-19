@@ -39,19 +39,4 @@ public class UserService {
         }
     }
 
-    //method will be allowed just for staff
-    public void getAllEmails() {
-        List<User> list = userRepository.findAll();
-        for (User oneUSerFromList : list) {
-            System.out.println("EMAIL:" + oneUSerFromList.getEmail());
-        }
-    }
-
-    //method will be allowed just for admin
-    public void getAllPasswords() {
-        List<User> list = userRepository.findAll();
-        for (User oneUSerFromList : list) {
-            System.out.println("Password:" + oneUSerFromList.getPassword());
-        }
-    }
 }
